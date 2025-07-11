@@ -32,7 +32,7 @@ A machine learning project developed for the Programming for Artificial Intellig
 ### Installation
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/Emotions-Detection-System.git
+   git clone https://github.com/Talha-Shahid-07/Emotions-Detection-System.git
    cd Emotions-Detection-System
    ```
 2. **Install Dependencies**:
@@ -56,4 +56,47 @@ A machine learning project developed for the Programming for Artificial Intellig
 ## 💡 Usage
 - **Preprocessing**: The script extracts and cleans data from `archive.zip`, producing `normalized_features_with_labels.csv`.
 - **Fuzzy Logic**: Applies fuzzy rules to classify emotions, saving results to `fuzzy_emotion_scores_final.csv`.
-- **Random
+- **Random Forest**: Trains a model on normalized features and evaluates performance with a confusion matrix.
+- **Webcam Prediction**: Processes OpenFace CSV data to predict emotions frame-by-frame, outputting timestamped emotion labels.
+- **Output Files**:
+  - `normalized_features_with_labels.csv`: Normalized features with true emotion labels.
+  - `fuzzy_emotion_scores_final.csv`: Final fuzzy logic emotion scores.
+  - `fuzzy_emotion_rf_balanced2.pkl`: Trained Random Forest model.
+  - Confusion matrix visualization saved as an image (via `matplotlib`).
+
+## 📂 Project Structure
+```
+Emotions-Detection-System/
+├── emotions_detection_system_final_2_0.py  # Main Python script
+├── emotions_detection_system_final_2_0.ipynb  # Jupyter Notebook version
+├── requirements.txt                       # Python dependencies
+├── archive.zip                            # RAVDESS dataset (not included in repo)
+├── surprised sad confused crying.csv      # Sample webcam data (optional)
+├── README.md                              # This file
+```
+
+## 🤝 Contributing
+Contributions are welcome! To contribute:
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. Make and commit changes:
+   ```bash
+   git commit -m 'Add new feature'
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/YourFeature
+   ```
+5. Open a Pull Request on GitHub.
+
+## 📄 License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## 📧 Contact
+For questions or support, please open an issue in the GitHub repository.
+
+## Acknowledgments
+Developed as part of the Programming for Artificial Intelligence course at Bahria University Karachi Campus. Special thanks to my instructor for guidance and support.
